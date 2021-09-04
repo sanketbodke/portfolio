@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #25b79f;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* ////........Navbar.......//// */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: fixed;
+}
+
+.menu-items {
+  display: flex;
+  order: 2;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.5rem;
+}
+
+.navbar .logo {
+  order: 1;
+  color: #f0f0e6;
+  font-size: 2rem;
+}
+
+/* ////........Home Content........//// */
+
+.home-content .name {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #07374a;
+}
+
+.home-content .name h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.home-content .name p {
+  color: #f0f0e6;
+  font-size: 2.1rem;
+}
+
+.angle-down-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  border: 3px solid #07374a;
+  border-radius: 50%;
+}
+
+.angle-down-icon a {
+  text-decoration: none;
+  color: #07374a;
+  padding: 1rem;
+}
+
+/* ////........About Me........//// */
+
+.about-me {
+  text-align: center;
+  background-color: #07374a;
+  padding-top: 6rem;
+}
+
+.about-me .about-heading {
+  padding: 2rem 0 1rem 0;
+  color: #25b79f;
+  font-size: 2.2rem;
+}
+
+.about-content img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-content p {
+  padding: 1rem 12rem 2rem 12rem;
+  font-size: 1.4rem;
+  color: #f0f0e6;
+}
+
+.skills h1 {
+  font-size: 2.2rem;
+  padding: 2rem 0 1rem 0;
+  color: #25b79f;
+}
