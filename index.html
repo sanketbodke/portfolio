@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanket Bodake</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/66aa7c98b3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <ul class="menu-items">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <h1 class="logo">Sanket Bodake</h1>
-        </nav>
-        <div class="home-content">
-          <div class="name">
-            <h1>Hi, I'm Sanket</h1>
-            <p>Lorem ipsum dolor sit.</p>
-          </div>
-          <div class="angle-down-icon">
-            <a href="#"><i class="fas fa-angle-down"></i></a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Bodake</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div>
+          <h1 class="navbar-brand">Sanket Bodake</h1>
         </div>
+        <ul class="menu-items">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </header>
-    <section class="about-me">
-      <div class="container">
-        <h1 class="about-heading">About Me</h1>
-        <div class="about-content">
-          <img
-            src="./img/fbavatar_1630400663387_6838396024049256103.png"
-            alt="image"
-          />
+    </nav>
+    <div class="home-content">
+      <div class="name">
+        <h1>Hi, I'm Sanket</h1>
+        <p>A Web Developer in training.</p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <h1 class="about-heading">About Me</h1>
+          <img src="./img/fbavatar_1630400663387_6838396024049256103.png" alt="image" />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem in eveniet necessitatibus adipisci aliquid illo eum
-            aliquam, et ipsam repudiandae aperiam facilis! Autem quibusdam in
-            eos, voluptas, dolores, veritatis neque vero voluptatem accusamus
-            voluptates repudiandae? Enim ipsa voluptates vitae non.
+            I am 16 year old, BBA-CA student studied at Pratibha College of Commerce and Computer studies.
+            I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new
+            things; the more, the better.
           </p>
-          <div class="skills">
-            <h1>My Skills</h1>
-            <p>HTML CSS BOOTSTRAP</p>
+          <div class="work-arrow">
+            <p>
+              <a href="#">Check out my work <i class="fas fa-arrow-down"></i></a>
+            </p>
           </div>
         </div>
+        <div class="skills">
+          <div class="right-content">
+            <h1>My Skills</h1>
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line"><span class="html"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line"><span class="css"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>BOOTSTRAP</span>
+                    </div>
+                    <div class="progress-line"><span class="bootstrap"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>JAVASCRIPT</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>C Programming</span>
+                        </div>
+                        <div class="progress-line"><span class="c"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </section>
+
+  <!-- <section>
+    <div class="portfolio">
+      <div class="container">
+        <h1 class="portfolio-heading">Portfolio</h1>
       </div>
-    </section>
-    <section>
-      <div class="portfolio">
-        <div class="container">
-          <h1 class="portfolio-heading">Portfolio</h1>
-        </div>
-        <div class="portfolio-content"></div>
-      </div>
-    </section>
-  </body>
+      <div class="portfolio-content"></div>
+    </div>
+  </section> -->
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if ($(this).scrollTop() > 550) {
+          $('.navbar').addClass('solid');
+          $('.back-to-top').addClass('visible');
+        } else {
+          $('.navbar').removeClass('solid');
+          $('.back-to-top').removeClass('visible');
+        }
+
+      });
+    });
+  </script>
+</body>
+
 </html>
