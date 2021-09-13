@@ -273,3 +273,139 @@ header {
   text-decoration: none;
   color: #25b79f;
 }
+
+/* ////.....Portfolio......///// */
+
+.portfolio{
+  background: #25b79f;
+  padding: 6rem 0;
+}
+
+.portfolio h1{
+  text-align: center;
+  color: #07374a;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.portfolio-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+}
+
+.portfolio-content img{
+  height: 330px;
+  width: 430px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-basis: 50%;
+  box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+}
+
+.proj-content{
+  flex-basis: 50%;
+  margin-left: 2rem;
+}
+
+.proj-content i{
+  font-size: 1.5rem;
+  color: #07374a;
+}
+
+.proj-content h2{
+  font-size: 2rem;
+  color: #07374a;
+}
+
+.proj-content p{
+  font-size: 1.3rem;
+  color: #07374a;
+  font-weight: 600;
+}
+
+.proj-content button{
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid #07374a;
+}
+
+button a{
+  text-decoration: none;
+  color: #07374a;
+  font-size: 1.1rem;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+button .fas{
+  font-size: 0.7rem;
+  padding: 0.3rem;
+}
+
+.more-work{
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.more-work p{
+  font-size: 1.6rem;
+  color: #07374a;
+  font-weight: 500;
+}
+
+.more-work a{
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.3rem;
+}
+
+.more-work a:hover{
+  border-bottom: 2px solid #f0f0e6;
+}
+
+
+/* ////......Contact......///// */
+
+.contact{
+  background: #07374a;
+  position: relative;
+  height: 600px;
+}
+
+.contact-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center; 
+}
+
+.contact-content h2{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #25b79f;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail{
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links{
+  color: #25b79f;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a{
+  text-decoration: none;
+  color: #25b79f;
+  padding: 0.5rem;
+}

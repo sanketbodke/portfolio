@@ -21,9 +21,9 @@
           <h1 class="navbar-brand">Sanket Bodake</h1>
         </div>
         <ul class="menu-items">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#my-works">Portfolio</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -33,11 +33,11 @@
         <p>A Web Developer in training.</p>
       </div>
       <div class="angle-down-icon">
-        <a href="#"><i class="fas fa-angle-down"></i></a>
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
   </header>
-  <section class="about-me">
+  <section class="about-me" id="about">
     <div class="container">
       <div class="about-content">
         <div class="left-content">
@@ -50,7 +50,7 @@
           </p>
           <div class="work-arrow">
             <p>
-              <a href="#">Check out my work <i class="fas fa-arrow-down"></i></a>
+              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
             </p>
           </div>
         </div>
@@ -90,16 +90,63 @@
               </div>
             </div>
   </section>
-
-  <!-- <section>
+  <section id="my-works">
     <div class="portfolio">
       <div class="container">
         <h1 class="portfolio-heading">Portfolio</h1>
+        <div class="portfolio-content">
+          <div class="proj-img">
+            <img src="./img/Screenshot (80).png" alt="proj-1-img">
+          </div>
+          <div class="proj-content">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI </h2>
+            <p>Build Using HTML, CSS, JS</p>
+            <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i class="fas fa-external-link-alt"></i></a></button>
+            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a></button>
+          </div>
       </div>
-      <div class="portfolio-content"></div>
+      <div class="container">
+        <div class="portfolio-content">
+          <div class="proj-img">
+            <img src="./img/Screenshot (76).png" alt="proj-2-img">
+          </div>
+          <div class="proj-content">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <h2>CSS Card </h2>
+            <p>Build Using HTML, CSS</p>
+            <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i class="fas fa-external-link-alt"></i></a></button>
+            <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a></button>
+          </div>
+      </div>
+      
+      <div class="more-work">
+        <p>
+          More
+        </p>
+        <a href="https://codepen.io/sanketbodke" target="blank">https://codepen.io/sanketbodke</a>
+      </div>
+  </section>
+  <div class="contact" id="contact-me">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p class="mail">
+          Get in touch with me <i class="fas fa-arrow-right"></i> sanketbodke26@gmail.com
+        </p>
+        <p class="links">Or find me on:</p>
+        <a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin"> Linkedin</i></a>
+        <a href="https://codepen.io/sanketbodke" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
+        <a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i> Github</a>
+        <a href="https://dev.to/sanketbodake" target="blank"><i class="fab fa-dev"></i> Dev Community</a>
+        <a href="https://twitter.com/Sanket46171296" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
     </div>
-  </section> -->
-
+  </div>
   <script type="text/javascript">
     $(document).ready(function () {
       $(window).scroll(function () {
@@ -114,6 +161,33 @@
 
       });
     });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
   </script>
 </body>
 
