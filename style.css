@@ -26,6 +26,7 @@ header {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 500;
 }
 
 .navbar-container {
@@ -48,6 +49,11 @@ header {
   text-decoration: none;
   color: #f0f0e6;
   font-size: 1.2rem;
+  transition: 0.1s;
+}
+
+.menu-items a:hover{
+  border-bottom: 2px solid #f0f0e6;
 }
 
 .navbar .logo {
@@ -64,6 +70,8 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #07374a;
+  width: 100%;
+  text-align: center;
 }
 
 .home-content .name h1 {
@@ -132,12 +140,12 @@ header {
 }
 
 .about-content .left-content {
-  flex-basis: 48%;
+  flex-basis: 45%;
   text-align: center;
 }
 
 .about-content .right-content {
-  flex-basis: 48%;
+  flex-basis: 45%;
 }
 
 /* ///.....Skill Bar....../// */
@@ -249,6 +257,7 @@ header {
   background-color: #07374a;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
 }
 
 .navbar.solid .navbar-brand {
@@ -259,7 +268,6 @@ header {
 
 .navbar-brand {
   display: none;
-  margin-top: 10px;
   color: #f0f0e6;
   font-weight: 400;
 }
@@ -274,6 +282,17 @@ header {
   color: #25b79f;
 }
 
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: none;
+}
+
 /* ////.....Portfolio......///// */
 
 .portfolio{
@@ -286,6 +305,7 @@ header {
   color: #07374a;
   font-size: 2rem;
   font-weight: 600;
+  margin: 3rem 0;
 }
 
 .portfolio-content{
@@ -297,7 +317,7 @@ header {
 
 .portfolio-content img{
   height: 330px;
-  width: 430px;
+  width: 380px;
   object-fit: cover;
   border-radius: 50%;
   flex-basis: 50%;
@@ -339,11 +359,22 @@ button a{
   font-size: 1.1rem;
   transition: 0.2s ease-in-out;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 
 button .fas{
   font-size: 0.7rem;
   padding: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover{
+  background: #07374a;
+}
+
+button:hover a,
+button:hover .fas{
+  color: #f0f0e6;
 }
 
 .more-work{
@@ -373,7 +404,7 @@ button .fas{
 .contact{
   background: #07374a;
   position: relative;
-  height: 600px;
+  height: 92vh;
 }
 
 .contact-content{
@@ -408,4 +439,187 @@ button .fas{
   text-decoration: none;
   color: #25b79f;
   padding: 0.5rem;
+}
+
+
+/* ////......Media query......//// */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 95%;
+    text-align: center;
+  }
+  
+  .about-content .right-content {
+    flex-basis: 95%;
+  }
+
+  .skills{
+    width: 100%;
+  }
+  
+  .skills-bar .bar .progress-line{
+    width: 100%;
+  }
+
+  .work-arrow{
+    display: none;
+  }
+
+  .right-content h1{
+    margin-top: 3.2rem;
+  }
+
+  .portfolio-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2.5rem;
+  }
+  
+  .portfolio-content img{
+    height: 230px;
+    width: 270px;
+    margin-bottom: 0.5rem;
+  }  
+
+  .proj-content button{
+    width: 90px;
+    margin-bottom: 2.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+
+  html {
+    font-size: 65%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 95%;
+    text-align: center;
+  }
+  
+  .about-content .right-content {
+    flex-basis: 95%;
+  }
+
+  .skills{
+    width: 100%;
+  }
+  
+  .skills-bar .bar .progress-line{
+    width: 100%;
+  }
+
+  .work-arrow{
+    display: none;
+  }
+
+  .right-content h1{
+    margin-top: 3.2rem;
+  }
+
+  .portfolio-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2.5rem;
+  }
+  
+  .portfolio-content img{
+    height: 230px;
+    width: 270px;
+    margin-bottom: 0.5rem;
+  }  
+
+  .proj-content button{
+    width: 90px;
+    margin-bottom: 2.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 95%;
+    text-align: center;
+  }
+  
+  .about-content .right-content {
+    flex-basis: 95%;
+  }
+
+  .skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-arrow{
+    display: none;
+  }
+
+  .left-content h1{
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .right-content h1{
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content{
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
 }
