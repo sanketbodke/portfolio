@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/fbavatar_1630400663387_6838396024049256103.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -27,7 +28,7 @@
         </ul>
       </div>
     </nav>
-    <div class="home-content">
+    <div class="home-content" id="home-page">
       <div class="name">
         <h1>Hi, I'm Sanket</h1>
         <p>A Web Developer in training.</p>
@@ -41,7 +42,9 @@
     <div class="container">
       <div class="about-content">
         <div class="left-content">
-          <h1 class="about-heading">About Me</h1>
+          <div>
+           <h1 class="about-heading">About Me</h1>
+          </div> 
           <img src="./img/fbavatar_1630400663387_6838396024049256103.png" alt="image" />
           <p>
             I am 16 year old, BBA-CA student studied at Pratibha College of Commerce and Computer studies.
@@ -56,7 +59,9 @@
         </div>
         <div class="skills">
           <div class="right-content">
-            <h1>My Skills</h1>
+            <div>
+              <h1 class="skills-heading">My Skills</h1>
+            </div>
             <div class="skills-bar">
               <div class="bar">
                 <div class="info">
@@ -94,46 +99,58 @@
                 <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
               </p>
             </div>
-  </section>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
   <section id="my-works">
     <div class="portfolio">
-      <div class="container">
-        <h1 class="portfolio-heading">Portfolio</h1>
-        <div class="portfolio-content">
-          <div class="proj-img">
-            <img src="./img/Screenshot (80).png" alt="proj-1-img">
-          </div>
-          <div class="proj-content">
+      <div class="proj-heading">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio-content container">
+        <div class="proj-1">
+          <img src="./img/Screenshot (80).png" alt="proj1-img">
+          <div class="proj1-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js"></i>
-            <h2>Restaurant Website UI </h2>
-            <p>Build Using HTML, CSS, JS</p>
-            <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i class="fas fa-external-link-alt"></i></a></button>
-            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a></button>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
           </div>
-      </div>
-      <div class="container">
-        <div class="portfolio-content">
-          <div class="proj-img">
-            <img src="./img/Screenshot (76).png" alt="proj-2-img">
-          </div>
-          <div class="proj-content">
+        </div>
+        
+        <div class="proj-2">
+          <img src="./img/Screenshot (76).png" alt="proj-2-img">
+          <div class="proj2-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
-            <h2>Profile Card </h2>
-            <p>Build Using HTML, CSS</p>
-            <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i class="fas fa-external-link-alt"></i></a></button>
-            <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i class="fas fa-external-link-alt"></i></a></button>
+            <h2>Profile Card</h2>
+            <p>Build Using HTML,CSS</p>
+            <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
           </div>
+          
+        </div>
+        <div class="more-work">
+          <p>
+            More
+          </p>
+          <a href="https://codepen.io/sanketbodke" target="blank">CodePen</a>
+        </div>
       </div>
-      
-      <div class="more-work">
-        <p>
-          More
-        </p>
-        <a href="https://codepen.io/sanketbodke" target="blank">CodePen</a>
-      </div>
+    </div>
   </section>
   <div class="contact" id="contact-me">
     <div class="container">
@@ -143,7 +160,8 @@
           Get in touch with me <i class="fas fa-arrow-right"></i> sanketbodke26@gmail.com
         </p>
         <p class="links">Or find me on:</p>
-        <a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin"> Linkedin</i></a>
+        <a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin">
+            Linkedin</i></a>
         <a href="https://codepen.io/sanketbodke" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
         <a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i> Github</a>
         <a href="https://dev.to/sanketbodake" target="blank"><i class="fab fa-dev"></i> Dev Community</a>
@@ -169,30 +187,30 @@
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
     });
-  });
   </script>
 </body>
 
