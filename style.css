@@ -510,6 +510,11 @@ header {
   text-decoration: none;
   color: #25b79f;
   padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover{
+  color: #f0f0e6;
 }
 
 /* ////......Media query......//// */
