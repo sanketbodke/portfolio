@@ -62,6 +62,11 @@ header {
   font-size: 2rem;
 }
 
+.navbar-brand a{
+  text-decoration: none;
+  color: #f0f0e6;
+}
+
 /* ////........Home Content........//// */
 
 .home-content .name {
@@ -197,13 +202,13 @@ header {
 }
 
 .progress-line .html {
-  width: 80%;
+  width: 85%;
 }
 .progress-line .css {
-  width: 70%;
+  width: 80%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 60%;
 }
 .progress-line .javascript {
   width: 50%;
@@ -239,13 +244,13 @@ header {
 }
 
 .progress-line .html::after {
-  content: "80%";
+  content: "85%";
 }
 .progress-line .css::after {
-  content: "70%";
+  content: "80%";
 }
 .progress-line .bootstrap::after {
-  content: "50%";
+  content: "60%";
 }
 .progress-line .javascript::after {
   content: "50%";
