@@ -504,6 +504,11 @@ header {
   font-size: 1rem;
 }
 
+.contact-content .mail a{
+  text-decoration: none;
+  color: #f0f0e6;
+}
+
 .contact-content .links {
   color: #25b79f;
   padding: 0.5rem;
