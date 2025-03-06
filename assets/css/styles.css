@@ -80,8 +80,8 @@ a {
 
 img {
     max-width: 100%;
-    height: 140px;
-    objet-fit: cover;
+    height: 120px;
+    object-fit: cover;
 }
 
 
