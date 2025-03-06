@@ -80,7 +80,8 @@ a {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 140px;
+    objet-fit: cover;
 }
 
 
@@ -545,6 +546,8 @@ body.dark-theme {
     }
     .profile__perfil img {
         width: 190px;
+        height: 140px;
+        object-fit: cover;
     }
     .profile__profession {
         margin-bottom: 1.5rem;
